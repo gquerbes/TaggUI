@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace TaggUI.Containers
+namespace TaggUI.Styles
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class View1 : ContentView
+    public partial class DefaultTheme 
     {
-        public View1()
+        public DefaultTheme()
         {
             InitializeComponent();
         }
