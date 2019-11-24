@@ -15,7 +15,6 @@
     <FileAlignment>512</FileAlignment>
     <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
-    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
     <TargetFrameworkVersion>v9.0</TargetFrameworkVersion>
     <AndroidUseAapt2>true</AndroidUseAapt2>
   </PropertyGroup>
@@ -60,7 +59,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TaggUI\TaggUI.csproj">
-      <Project>{5219e136-a0d9-425e-96a9-75365ca575f4}</Project>
+      <Project>{205701DE-F406-41EC-B9EB-CA20AE2AA677}</Project>
       <Name>TaggUI</Name>
     </ProjectReference>
   </ItemGroup>

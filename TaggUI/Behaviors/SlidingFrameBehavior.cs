@@ -40,9 +40,8 @@ namespace TaggUI.Behaviors
         {
             if (_isAnimating) return;
             _isAnimating = true;
-            double height = AbsoluteLayout.GetLayoutBounds(view).Height;
-            double changeDelta = 0;
 
+            double changeDelta = 0;
             switch (direction)
             {
                 case SwipeDirection.Up:
@@ -52,6 +51,8 @@ namespace TaggUI.Behaviors
                     changeDelta = -.05;
                     break;
             }
+
+            double height = AbsoluteLayout.GetLayoutBounds(view).Height;
 
             while ((height + changeDelta <= ExpandedHeight) && (height + changeDelta >= CollapsedHeight))
             {
