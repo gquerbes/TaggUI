@@ -12,7 +12,13 @@ namespace TaggUI.Styles
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class LightTheme 
     {
-        public LightTheme()
+        private static readonly Lazy<LightTheme> lazy = new Lazy<LightTheme>
+            (() => new LightTheme());
+
+        public static LightTheme Instance { get { return lazy.Value; } }
+
+
+        private LightTheme()
         {
             InitializeComponent();
         }

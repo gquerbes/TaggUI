@@ -12,9 +12,16 @@ namespace TaggUI.Styles
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class DarkTheme 
     {
-        public DarkTheme()
+        private static readonly Lazy<DarkTheme> lazy = new Lazy<DarkTheme>
+            (() => new DarkTheme());
+
+        public static DarkTheme Instance { get { return lazy.Value; } }
+
+
+        private DarkTheme()
         {
             InitializeComponent();
         }
+
     }
 }

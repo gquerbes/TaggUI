@@ -10,7 +10,7 @@ using Xamarin.Forms.Xaml;
 namespace TaggUI.Styles
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class DefaultTheme 
+    public partial class DefaultTheme
     {
         public DefaultTheme()
         {
